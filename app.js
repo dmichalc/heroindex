@@ -1,16 +1,9 @@
-$(document.body).on('click', 'a[href*="#"]', function(e) {
-    e.preventDefault();
-    $('html,body').animate({
-      scrollTop: $(this.hash).offset().top
-    }, 900);
-  });
-  
-  $(window).on('scroll', function() {
-    var scrolled = $(window).scrollTop();
-    var height = $(window).height();
-    if (scrolled < height) {
-      $('.full-image').css({
-        'top': -scrolled * .5
-      });
-    }
-  });
+// hello world
+console.log("Hello World");
+
+const my_button = document.getElementById("demo");
+document.getElementById("demo").onclick = function() {myFunction()};
+
+function myFunction() {
+  document.getElementById("demo").innerHTML = "YOU CLICKED ME!";
+}
