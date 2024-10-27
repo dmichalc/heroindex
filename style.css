@@ -31,6 +31,8 @@ body, html {
 }
 
 nav {
+    display: flex;
+    justify-content: space-between;
     width: auto;
     padding: 1%;
    }
