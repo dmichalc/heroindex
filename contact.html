@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width">
   <link rel="icon" type="ico" href="img/uphlgooseicon.ico">
   <link rel="stylesheet" href="style.css">
- 
+  
     
 </head>
 
@@ -13,7 +13,7 @@
     <div class="hero-text">
       <h1>Contact us</h1>
       <p>Fast moving subway image</p>
-      <button>Click me</button>
+      <button id="demo">Click me</button>
     </div>
   </div>
   <body>
@@ -22,5 +22,31 @@
     <a href="gallery.html">GALLERY</a>
     <a href="contact.html">CONTACT</a>
   </nav>
+  <main>
+    <h3>Using CSS to style an HTML Form</h3>
+
+<div>
+  <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+  
+    <input type="submit" value="Submit">
+  </form>
+</div>
+  </main>
+  <footer>
+    <p>&copy UphillGoose</p>
+  </footer>
 </body>
+<script src="app.js"></script>
   </html>
