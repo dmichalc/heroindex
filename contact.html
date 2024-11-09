@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width">
   <link rel="icon" type="ico" href="img/uphlgooseicon.ico">
   <link rel="stylesheet" href="style.css">
+  <title>demo site. Contact page html/js/php?.</title>
   
     
 </head>
@@ -13,7 +14,7 @@
     <div class="hero-text">
       <h1>Contact us</h1>
       <p>Fast moving subway image</p>
-      <button id="demo">Click me</button>
+     
     </div>
   </div>
   <body>
@@ -21,12 +22,14 @@
     <a href="index.html">HOME</a>
     <a href="gallery.html">GALLERY</a>
     <a href="contact.html">CONTACT</a>
+    <a href="user.html">USER</a>
   </nav>
   <main>
-    <h3>Using CSS to style an HTML Form</h3>
+   <h4>Please complete form below.</h4>
 
 <div>
-  <form action="/action_page.php">
+  <main>
+  <form>
     <label for="fname">First Name</label>
     <input type="text" id="fname" name="firstname" placeholder="Your name..">
 
@@ -39,14 +42,22 @@
       <option value="canada">Canada</option>
       <option value="usa">USA</option>
     </select>
-  
     <input type="submit" value="Submit">
+  <script>document.addEventListener('submit', (event) => {
+    event.preventDefault();
+    alert('Thank you for your submission!');
+    window.location.href = 'index.html';
+});</script>
+    
   </form>
+</main>
 </div>
   </main>
+  <div></div>
   <footer>
     <p>&copy UphillGoose</p>
   </footer>
+
 </body>
-<script src="app.js"></script>
+
   </html>

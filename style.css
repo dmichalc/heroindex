@@ -13,7 +13,7 @@ body {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/fast-mov-subway.jpeg");
   /*filter: blur(2px);*/
   /* Set a specific height */
-  height: 20rem;
+  height: 10rem;
 
   /* Position and center the image to scale nicely on all screens */
   background-position: center;
@@ -23,7 +23,7 @@ body {
   margin-top: .5em;
 }
 main {
-  height: 9rem;
+  height: 15rem;
 }
 /* Place text in the middle of the image */
 .hero-text {
@@ -42,6 +42,15 @@ nav {
     padding: 1%;
    }
 
+h4 {
+    color: #FA9F42;
+}
+/*
+h4:hover {
+  background-color: #FA9F42;
+  color: black;
+}
+  */
 nav a:hover {
     background-color: #FA9F42;
     color: black;
@@ -54,10 +63,18 @@ nav a {
       border-radius: 10%;
     }
 
+    .smicons {
+      display: flex;
+      justify-content: space-between;
+      width: auto;
+      padding: 2%;
+      gap: 3%;
+    }
+
     input[type=text], select {
       width: 100%;
-      padding: 12px 20px;
-      margin: 8px 0;
+      padding: 7px 14px;
+      margin: 6px 0;
       display: inline-block;
       border: 1px solid #ccc;
       border-radius: 4px;
@@ -68,7 +85,7 @@ nav a {
       width: 100%;
       background-color: #6D8A96;
       color: white;
-      padding: 14px 20px;
+      padding: 7px 14px;
       margin: 8px 0;
       border: none;
       border-radius: 4px;
@@ -85,12 +102,31 @@ nav a {
       padding: 20px;
       color: white;
     }
-   footer p {
-    display: flex;
-    float: right;
-    color: #FA9F42;
-    padding: 1%;
+    p, h3 {
+      color: #FA9F42;
     }
+
+    footer {
+      display: inline-flex;
+      width: 100%;
+    }
+
+    footer div {
+      display: flex;
+      width: 100%;
+      padding: 1%;
+      justify-content: center;
+      align-items: center;
+    } 
+    footer p {
+      align-items: right;
+      float: right;
+      color: #FA9F42;
+      width: 100%;
+      padding-left: 85%;
+      padding-top: 10%;
+      
+      }
     div.gallery {
       margin: 5px;
       border: 1px solid #ccc;
@@ -111,3 +147,4 @@ nav a {
       padding: 15px;
       text-align: center;
     }
+   
